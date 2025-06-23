@@ -49,5 +49,5 @@ cd rock-paper-scissors
 
 > ✅ No installations or packages needed – it’s 100% front-end!
 
-📜 License
+## 📜 License
 - This project is licensed under the MIT License.
