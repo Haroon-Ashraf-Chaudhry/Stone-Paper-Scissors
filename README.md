@@ -35,7 +35,7 @@ Welcome to my **Rock Paper Scissors** game — a fun, interactive, and beautiful
 
 ---
 
-🧑‍💻 Installation & Usage
+## 🧑‍💻 Installation & Usage
 
 1. Clone the repository:
 ```bash
