@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  min-height: 100vh;
+  padding: 1.5rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
+
+h1 {
+  flex: 1;
+  font-size: 2.8rem;
+  text-align: center;
+  font-weight: 700;
+  background: linear-gradient(to right, #ffffff, #ffdada);
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 2rem;
+}
+
+.choices {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+
+.choice {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.choice:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+.choice img {
+  height: 110px;
+  width: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.2s;
+}
+
+.choice:active img {
+  transform: scale(0.9);
+}
+
+.score-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  gap: 5rem;
+  font-size: 1.5rem;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#user-score,
+#comp-score {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.msg-container {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+#msg {
+  background-color: #00000088;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: inline-block;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .choices {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .choice {
+    height: 130px;
+    width: 130px;
+  }
+
+  .choice img {
+    height: 90px;
+    width: 90px;
+  }
+
+  .score-board {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
